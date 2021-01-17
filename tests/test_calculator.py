@@ -15,10 +15,6 @@ class TestCalculator(TestCase):
     def test_sum_with_mocking(self, MockCalculator):
         calculator = MockCalculator()  # create a mock object of Calculator class. This will help to customize output of class methods
 
-        '''
-        mock the sum() method of Calculator class to return value '1'. Noth that since we have mocked/stubbed the
-        sum method, it will not execute the actual logic whenever called and just return 1 irrespective of input.
-        '''
         calculator.sum.return_value = 1  
 
         actual = calculator.sum(2, 4)   # calling the sum method but the mocked version will actually get called
