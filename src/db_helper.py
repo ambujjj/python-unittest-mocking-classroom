@@ -2,7 +2,7 @@ import mysql.connector
 sqldb = mysql.connector.connect(
     host="localhost",
     user="root",
-    password="Chalbe@123",
+    password="abc123",
     database="tables",
     auth_plugin="mysql_native_password"
 )
